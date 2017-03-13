@@ -36,11 +36,11 @@ class Founder: Developer {
 }
 
 class KarumiFactory {
-  func getEmployee(name: String) -> Developer {
-    return Employee(name: name, daysOff: 10)
+  func makeEmployee(name: String, daysOff: Int) -> Developer {
+    return Employee(name: name, daysOff: daysOff)
   }
   
-  func getFounder(name: String) -> Developer {
+  func makeFounder(name: String, extraDaysOff: Int) -> Developer {
     return Founder(name: name, extraDaysOff: 20)
   }
 }
